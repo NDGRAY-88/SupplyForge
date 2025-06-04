@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Business Name</title>
+  <style>
+    /* 1. Page background & default text color */
+    body {
+      background-color: #ffffff;  /* white background */
+      color: #000000;             /* black text */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    /* 2. Header image and tagline with no gaps */
+    header {
+      text-align: center;
+      background-color: #ffffff;
+      padding: 0;                /* remove any padding */
+      margin: 0;                 /* remove any margin */
+    }
+    header img {
+      width: 50%;                /* half the container width */
+      height: auto;              /* preserve aspect ratio */
+      display: block;            /* no inline whitespace */
+      margin: 0 auto;            /* center the image */
+    }
+    header .tagline {
+      padding: 0;                /* remove any padding */
+      margin: 0;                 /* remove any margin */
+    }
+    header .tagline h1,
+    header .tagline p {
+      margin: 0;                 /* remove default margins */
+      padding: 0;
+    }
+
+    /* 3. Main container */
+    .container {
+      max-width: 1500px;
+      margin: auto;
+      padding: 2rem;
+      background-color: #ffffff;
+    }
+    /* 4. Section Heading with horizontal lines */
+    .section-heading {
+      text-align: center;
+      margin: 2rem 0;
+      position: relative;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    .section-heading span {
+      background-color: #ffffff;
+      padding: 0 1rem;
+      position: relative;
+      z-index: 1;
+    }
+    .section-heading::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      border-top: 1px solid #000000;
+      z-index: 0;
+    }
+
+    /* 5. Feature blocks */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .feature {
+      background-color: #ffffff;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .feature h3 {
+      margin-top: 0;
+    }
+
+    /* 6. Section Heading with horizontal lines */
+    .section-heading {
+      text-align: center;
+      margin: 2rem 0;
+      position: relative;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    .section-heading span {
+      background-color: #ffffff;
+      padding: 0 1rem;
+      position: relative;
+      z-index: 1;
+    }
+    .section-heading::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      border-top: 1px solid #000000;
+      z-index: 0;
+    }
+
+    /* 7. Embedded form wrapper to avoid scrollbar */
+    .form-wrapper {
+      position: relative;
+      width: 100%;
+      height: 1500px;
+      overflow: hidden;
+    }
+    .form-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      overflow: hidden;
+    }
+
+    /* 7. Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666; /* muted footer text */
+      background-color: #ffffff;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- Header image now at 50% width, no gap to tagline -->
+    <img src="header.jpg" alt="Your Business Heading Image">
+    <div class="tagline">
+      <h1>Your Precision Engineering Experts</h1>
+    </div>
+  </header>
+  
+    <div class="container">
+    <!-- New section heading -->
+    <h2 class="section-heading"><span>Our Services</span></h2>
+
+  <div class="container">
+    <!-- Four content areas -->
+    <div class="features">
+      <div class="feature">
+        <h3>Agent Sourcing</h3>
+        <p>Your drawings won't disappear into an inbox. Our sourcing experts match your job with the right suppliers - human to human.</p>
+      </div>
+      <div class="feature">
+        <h3>Generate Leads</h3>
+        <p>We connect Buyers with verified UK suppliers. Upload your job and get competitive quotes - no chasing, no drama, just results.</p>
+      </div>
+      <div class="feature">
+        <h3>Manufacturer Directory</h3>
+        <p>It's more than a list. It's a living network of suppliers, ready to quote your job today.</p>
+      </div>
+      <div class="feature">
+        <h3>Register as a Buyer</h3>
+        <p>Got parts to make? Post your job and sytart getting quotes straight away. It's sinple, and it works.</p>
+      </div>
+    </div>
+
+    <div class="container">
+    <!-- New section heading -->
+    <h2 class="section-heading"><span>Get in Touch</span></h2>
+
+    <!-- Embedded Microsoft Form -->
+    <p>Please fill out the form below to be added to the waitlist for our services. We offer various services for UK Manufacturing Businesses including RFQs, work agent services, and registration options.:</p>
+    <div class="form-wrapper">
+      <iframe 
+        src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAZAAJBluVNUOTlCSE9CT0ozU0pZNzg2Q0dHQjJaOE5MVC4u"
+        allowfullscreen 
+        scrolling="no">
+        Loading…
+      </iframe>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Supply forge Ltd. All rights reserved.
+  </footer>
+
+</body>
+</html>
